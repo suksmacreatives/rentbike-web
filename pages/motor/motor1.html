@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Yamaha NMAX | Juli Rentbike</title>
+    <meta name="description" content="Explore Bali with the Yamaha NMAX from Juli Rentbike.">
+
+    <link rel="stylesheet" href="../../css/style.css">
+    <link rel="stylesheet" href="../../css/navbar.css">
+    <link rel="stylesheet" href="../../css/motor-detail.css">
+    <link rel="stylesheet" href="../../css/footer.css">
+</head>
+<body>
+
+    <div id="site-navbar"></div>
+
+    <main class="motor-detail-page">
+
+        <!-- Breadcrumb -->
+        <div class="detail-breadcrumb">
+            <a href="index.html">Motorcycles</a>
+            <span>/</span>
+            <span>Yamaha NMAX</span>
+        </div>
+
+        <!-- Main product section -->
+        <section class="detail-hero">
+
+            <div class="detail-copy">
+                <span class="detail-eyebrow">
+                    Comfort meets adventure
+                </span>
+
+                <h1>Yamaha <span>NMAX</span></h1>
+
+                <p class="detail-intro">
+                    Take the scenic route. Enjoy a comfortable ride through
+                    Bali's coastal roads, vibrant towns, and hidden destinations.
+                </p>
+
+               
+                <div class="detail-tags">
+                    <span>Automatic</span>
+                    <span>155 cc</span>
+                    <span>2 passengers</span>
+                </div>
+
+                <div class="motor-meta">
+                    <div class="motor-meta-item">
+                        <span class="motor-meta-label">Model year</span>
+                        <span class="motor-meta-value">2024</span>
+                    </div>
+
+                    <div class="motor-meta-item">
+                        <span class="motor-meta-label">Availability</span>
+                        <span class="motor-meta-value">Available for rent</span>
+                    </div>
+                </div>
+                
+                <div class="motor-colors">
+                    <div class="motor-colors-heading">
+                        <span class="motor-meta-label">Available colors</span>
+                        <span class="motor-selected-color" id="selectedColorName">
+                            Matte Black
+                        </span>
+                    </div>
+
+                    <div class="motor-color-options">
+                        <button
+                            type="button"
+                            class="motor-color-option is-selected"
+                            data-color="Matte Black"
+                            style="--swatch-color: #292929"
+                            aria-label="Matte Black"
+                            aria-pressed="true">
+                        </button>
+
+                        <button
+                            type="button"
+                            class="motor-color-option"
+                            data-color="White"
+                            style="--swatch-color: #e9e9e4"
+                            aria-label="White"
+                            aria-pressed="false">
+                        </button>
+
+                        <button
+                            type="button"
+                            class="motor-color-option"
+                            data-color="Blue"
+                            style="--swatch-color: #536e91"
+                            aria-label="Blue"
+                            aria-pressed="false">
+                        </button>
+                    </div>
+                </div>
+
+                <div class="detail-price-main">
+                    <div>
+                        <span class="detail-price-label">Rental starts from</span>
+                        <div class="detail-price-value">
+                            <strong>Rp150.000</strong>
+                            <span>/ day</span>
+                        </div>
+                    </div>
+
+                    <span class="detail-price-note">Flexible rental options</span>
+                </div>
+
+                <div class="detail-actions">
+                    <a href="../contact.html" class="detail-book-button">
+                        Book this motorcycle <span>↗</span>
+                    </a>
+
+                    <a href="#rental-rates" class="detail-rates-link">
+                        View rental rates <span>↓</span>
+                    </a>
+                </div>
+
+                <div class="detail-trust">
+                    <span class="trust-icon">✳</span>
+                    <p>A simple way to explore Bali at your own pace.</p>
+                </div>
+            </div>
+
+            <!-- Image slider -->
+            <div class="detail-gallery" id="detailGallery">
+
+                <div class="gallery-topline">
+                    <span class="gallery-label">The ride</span>
+                    <span class="gallery-counter" id="galleryCounter">
+                        01 <span>/</span> 04
+                    </span>
+                </div>
+
+                <div class="gallery-window" id="galleryWindow">
+                    <div class="gallery-track" id="galleryTrack">
+
+                        <div class="gallery-slide">
+                            <img
+                                src="../../images/vesmet.png"
+                                alt="Yamaha NMAX front view"
+                                draggable="false">
+                        </div>
+
+                        <div class="gallery-slide">
+                            <img
+                                src="../../images/vesmet.png"
+                                alt="Yamaha NMAX side view"
+                                loading="lazy"
+                                draggable="false">
+                        </div>
+
+                        <div class="gallery-slide">
+                            <img
+                                src="../../images/vesmet.png"
+                                alt="Yamaha NMAX rear view"
+                                loading="lazy"
+                                draggable="false">
+                        </div>
+
+                        <div class="gallery-slide">
+                            <img
+                                src="../../images/vesmet.png"
+                                alt="Yamaha NMAX detail view"
+                                loading="lazy"
+                                draggable="false">
+                        </div>
+
+                    </div>
+
+                    <div class="gallery-overlay"></div>
+
+                    <button
+                        class="gallery-arrow gallery-prev"
+                        id="galleryPrev"
+                        type="button"
+                        aria-label="Previous image">
+                        <span>←</span>
+                    </button>
+
+                    <button
+                        class="gallery-arrow gallery-next"
+                        id="galleryNext"
+                        type="button"
+                        aria-label="Next image">
+                        <span>→</span>
+                    </button>
+
+                    <div class="gallery-bottom">
+                        <div class="gallery-dots" id="galleryDots">
+                            <button class="gallery-dot is-active" type="button" aria-label="Show image 1"></button>
+                            <button class="gallery-dot" type="button" aria-label="Show image 2"></button>
+                            <button class="gallery-dot" type="button" aria-label="Show image 3"></button>
+                            <button class="gallery-dot" type="button" aria-label="Show image 4"></button>
+                        </div>
+
+                        <span class="gallery-swipe-label">Swipe to explore ↔</span>
+                    </div>
+                </div>
+
+                <div class="gallery-caption">
+                    <span>Yamaha NMAX</span>
+                    <span>Designed for the journey</span>
+                </div>
+
+                <div class="gallery-progress">
+                    <span id="galleryProgress"></span>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Information and rates -->
+        <section class="detail-information">
+
+            <div class="detail-section-heading">
+                <span class="detail-eyebrow">Everything you need</span>
+                <h2>Made for the open road.</h2>
+                <p>
+                    A comfortable everyday ride for discovering more of the island.
+                </p>
+            </div>
+
+            <div class="detail-spec-grid">
+
+                <article class="detail-spec">
+                    <span class="spec-number">01</span>
+                    <span class="spec-icon">↗</span>
+                    <h3>Automatic transmission</h3>
+                    <p>Simple, convenient riding for everyday journeys.</p>
+                </article>
+
+                <article class="detail-spec">
+                    <span class="spec-number">02</span>
+                    <span class="spec-icon">◉</span>
+                    <h3>155 cc engine</h3>
+                    <p>Designed for comfortable rides around the island.</p>
+                </article>
+
+                <article class="detail-spec">
+                    <span class="spec-number">03</span>
+                    <span class="spec-icon">＋</span>
+                    <h3>Room for two</h3>
+                    <p>A practical choice for solo trips or riding together.</p>
+                </article>
+
+                <article class="detail-spec">
+                    <span class="spec-number">04</span>
+                    <span class="spec-icon">⌁</span>
+                    <h3>Explore your way</h3>
+                    <p>Enjoy the freedom to create your own Bali itinerary.</p>
+                </article>
+
+            </div>
+
+        </section>
+
+        <!-- Rental rates -->
+        <section class="detail-rates" id="rental-rates">
+
+            <div class="rates-heading">
+                <span class="detail-eyebrow">Simple and transparent</span>
+                <h2>Rental rates</h2>
+                <p>Choose the rental duration that suits your journey.</p>
+            </div>
+
+            <div class="rates-table">
+
+                <div class="rate-row">
+                    <div>
+                        <span class="rate-name">Daily rental</span>
+                        <span class="rate-description">For a quick island getaway</span>
+                    </div>
+                    <strong>Rp150.000 <small>/ day</small></strong>
+                </div>
+
+                <div class="rate-row">
+                    <div>
+                        <span class="rate-name">Weekly rental</span>
+                        <span class="rate-description">For a longer Bali escape</span>
+                    </div>
+                    <strong>Contact us</strong>
+                </div>
+
+                <div class="rate-row">
+                    <div>
+                        <span class="rate-name">Monthly rental</span>
+                        <span class="rate-description">For an extended stay</span>
+                    </div>
+                    <strong>Contact us</strong>
+                </div>
+
+                <p class="rates-note">
+                    Prices are examples and should be confirmed with Juli Rentbike.
+                    Delivery, deposit, and other conditions can be discussed before booking.
+                </p>
+
+            </div>
+
+        </section>
+
+        <!-- Booking call to action -->
+        <section class="detail-booking-cta">
+            <div>
+                <span class="detail-eyebrow">Your next adventure awaits</span>
+                <h2>Ready to ride?</h2>
+                <p>Get in touch and let us help you plan your Bali journey.</p>
+            </div>
+
+            <a href="../contact.html" class="detail-book-button">
+                Enquire about this ride <span>↗</span>
+            </a>
+        </section>
+
+    </main>
+
+    <div id="site-footer-mount"></div>
+
+    <script src="../../js/navbar.js" defer></script>
+    <script src="../../js/motor-detail.js" defer></script>
+    <script src="../../js/footer.js" defer></script>
+
+</body>
+</html>

@@ -1,0 +1,442 @@
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    width: 100%;
+    padding: 24px 3.2%;
+    color: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.navbar *,
+.navbar *::before,
+.navbar *::after {
+    box-sizing: border-box;
+}
+
+.navbar a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.navbar button {
+    font: inherit;
+}
+
+.navbar-inner {
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
+    align-items: center;
+    gap: 32px;
+    width: 100%;
+    min-height: 50px;
+}
+
+/* LOGO */
+
+.navbar-logo {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    width: fit-content;
+    flex-shrink: 0;
+}
+
+.logo-icon {
+    display: grid;
+    place-items: center;
+    width: 36px;
+    height: 36px;
+    overflow: hidden;
+    border-radius: 11px;
+    background: rgba(255, 255, 255, 0.13);
+}
+
+.logo-icon svg {
+    width: 25px;
+    height: 25px;
+}
+
+.logo-text {
+    font-size: 23px;
+    font-weight: 700;
+    letter-spacing: -1px;
+}
+
+/* DESKTOP LINKS */
+
+.navbar-links {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: clamp(32px, 4vw, 72px);
+    white-space: nowrap;
+}
+
+.navbar-links > a {
+    color: rgba(255, 255, 255, 0.84);
+    font-size: 20px;
+    letter-spacing: -0.5px;
+    transition: color 0.2s ease;
+}
+
+.navbar-links > a:hover {
+    color: #fff;
+}
+
+/* ACTIONS */
+
+.navbar-actions {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 30px;
+}
+
+.navbar-socials {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.navbar-socials a {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    transition: opacity 0.2s ease;
+}
+
+.navbar-socials a:hover {
+    opacity: 0.65;
+}
+
+.navbar-socials svg {
+    display: block;
+    width: 25px;
+    height: 25px;
+}
+
+.navbar-book {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 72px;
+    padding: 0 30px;
+    border: 1px solid #fff;
+    border-radius: 100px;
+    background: #fff;
+    color: #171717 !important;
+    font-size: 19px;
+    white-space: nowrap;
+    transition:
+        background 0.25s ease,
+        color 0.25s ease,
+        transform 0.25s ease;
+}
+
+.navbar-book:hover {
+    background: #e9e9e9;
+    transform: translateY(-2px);
+}
+
+/* MOBILE CONTROLS */
+
+.navbar-toggle,
+.navbar-mobile-panel {
+    display: none;
+}
+
+.navbar-toggle {
+    padding: 10px;
+    border: 0;
+    background: transparent;
+    color: #fff;
+    cursor: pointer;
+}
+
+.navbar-toggle span,
+.navbar-close span {
+    display: block;
+    width: 25px;
+    height: 2px;
+    border-radius: 2px;
+    background: currentColor;
+    transition:
+        transform 0.25s ease,
+        width 0.25s ease;
+}
+
+.navbar-toggle span + span {
+    width: 17px;
+    margin-top: 7px;
+    margin-left: auto;
+}
+
+/* =========================
+   TABLET
+========================= */
+
+@media (max-width: 1100px) {
+    .navbar {
+        padding-right: 3%;
+        padding-left: 3%;
+    }
+
+    .navbar-inner {
+        gap: 20px;
+    }
+
+    .navbar-links {
+        gap: 26px;
+    }
+
+    .navbar-links > a {
+        font-size: 17px;
+    }
+
+    .navbar-actions {
+        gap: 20px;
+    }
+
+    .navbar-socials {
+        gap: 14px;
+    }
+
+    .navbar-book {
+        min-height: 60px;
+        padding: 0 24px;
+        font-size: 16px;
+    }
+}
+
+/* =========================
+   MOBILE NAVIGATION
+========================= */
+
+@media (max-width: 760px) {
+    .navbar {
+        padding: 16px;
+    }
+
+    .navbar-inner {
+        display: flex;
+        justify-content: space-between;
+        min-height: 48px;
+        gap: 12px;
+    }
+
+    .navbar-inner > .navbar-links,
+    .navbar-inner > .navbar-actions {
+        display: none;
+    }
+
+    .navbar-toggle {
+        display: block;
+        flex-shrink: 0;
+        color: #fff;
+    }
+
+    /* Dropdown panel utama dengan background solid gelap dan teks putih */
+    .navbar-mobile-panel {
+        position: absolute;
+        top: 12px;
+        left: 16px;
+        right: 16px;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        width: auto;
+        height: auto;
+        min-height: 350px;
+        max-height: calc(100vh - 24px);
+        overflow-y: auto;
+        padding: 24px;
+        border: 1px solid rgba(255, 255, 255, 0.15);
+        border-radius: 24px;
+        background: #171717 !important;
+        color: #ffffff !important;
+        box-shadow: 0 25px 50px rgba(0, 0, 0, 0.8);
+        z-index: 99999;
+
+        opacity: 0;
+        visibility: hidden;
+        pointer-events: none;
+        transform: translateY(-10px);
+        transition: opacity 0.25s ease, visibility 0.25s ease, transform 0.25s ease;
+    }
+
+    /* Saat menu terbuka (is-open) */
+    .navbar.is-open .navbar-mobile-panel {
+        opacity: 1 !important;
+        visibility: visible !important;
+        pointer-events: auto !important;
+        transform: translateY(0) !important;
+    }
+
+    .navbar.is-open .navbar-toggle {
+        opacity: 0;
+        pointer-events: none;
+    }
+
+    /* Bagian Atas Panel (Logo & Tombol Close) */
+    .mobile-panel-top {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+    }
+
+    .mobile-panel-top .logo-icon {
+        width: 32px;
+        height: 32px;
+        background: rgba(255, 255, 255, 0.15);
+        display: grid;
+        place-items: center;
+        border-radius: 8px;
+    }
+
+    .mobile-panel-top .logo-icon svg {
+        width: 20px;
+        height: 20px;
+        color: #fff;
+    }
+
+    .mobile-panel-top .logo-text {
+        font-size: 18px;
+        font-weight: 700;
+        color: #ffffff !important;
+    }
+
+    /* Tombol Close (X) */
+    .navbar-close {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 36px;
+        height: 36px;
+        padding: 0;
+        border: 0;
+        background: rgba(255, 255, 255, 0.1);
+        border-radius: 50%;
+        color: #fff;
+        cursor: pointer;
+    }
+
+    .navbar-close span {
+        width: 18px;
+        height: 2px;
+        background: #fff;
+        display: block;
+    }
+
+    .navbar-close span:first-child {
+        transform: translateY(1px) rotate(45deg);
+    }
+
+    .navbar-close span:last-child {
+        transform: translateY(-1px) rotate(-45deg);
+    }
+
+    /* MEMAKSA SEMUA LINK DI DALAM DROPDOWN BERWARNA PUTIH */
+    .mobile-panel-links {
+        display: flex;
+        flex-direction: column;
+        gap: 14px;
+        width: 100%;
+        border-top: 1px solid rgba(255, 255, 255, 0.15);
+        border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+        padding: 16px 0;
+    }
+
+    .mobile-panel-links a,
+    .mobile-panel-links a:visited,
+    .mobile-panel-links a:link {
+        display: block !important;
+        font-size: 18px !important;
+        font-weight: 500 !important;
+        color: #ffffff !important;
+        text-decoration: none !important;
+        padding: 6px 0 !important;
+        opacity: 1 !important;
+        visibility: visible !important;
+    }
+
+    .mobile-panel-links a:hover {
+        color: #60a5fa !important;
+    }
+
+    /* Bagian Bawah (Tombol Book & Sosmed) */
+    .mobile-panel-bottom {
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+        width: 100%;
+    }
+
+    .mobile-panel-bottom a,
+    .mobile-panel-bottom span {
+        color: #ffffff !important;
+        opacity: 1 !important;
+        visibility: visible !important;
+    }
+
+    .mobile-panel-bottom .navbar-book {
+        display: flex !important;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        min-height: 48px;
+        padding: 0 20px;
+        border-radius: 30px;
+        font-size: 16px;
+        font-weight: 600;
+        background: #ffffff !important;
+        color: #171717 !important;
+        text-decoration: none;
+    }
+
+    .mobile-panel-bottom .navbar-socials {
+        display: flex;
+        gap: 20px;
+        align-items: center;
+        justify-content: center;
+        margin-top: 5px;
+    }
+
+    .mobile-panel-bottom .navbar-socials svg {
+        width: 24px;
+        height: 24px;
+        stroke: #ffffff !important;
+    }
+}
+
+/* =========================
+   VERY SMALL PHONES
+========================= */
+
+@media (max-width: 360px) {
+    .navbar {
+        padding: 12px;
+    }
+
+    .navbar-mobile-panel {
+        right: 12px;
+        left: 12px;
+    }
+}
+
+/* =========================
+   REDUCED MOTION ACCESSIBILITY
+========================= */
+
+@media (prefers-reduced-motion: reduce) {
+    .navbar *,
+    .navbar *::before,
+    .navbar *::after {
+        scroll-behavior: auto !important;
+        transition-duration: 0.01ms !important;
+    }
+}
+

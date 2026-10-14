@@ -1,0 +1,549 @@
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RentBike — Premium Motorcycle Rental</title>
+
+    <link rel="stylesheet" href="css/navbar.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/rental-terms.css">
+
+
+    <script src="js/navbar.js" defer></script>
+</head>
+<body>
+
+    <!-- Shared navbar -->
+    <div id="site-navbar"></div>
+
+    <!-- Contoh hero, nantinya kita buat terpisah -->
+    <main>
+        <section class="hero">
+            <div class="hero-content">
+                <p class="hero-eyebrow">Your ride, your adventure</p>
+                <h1>Discover Bali<br>On Two Wheels.</h1>
+                <p>Explore every destination with the perfect ride.</p>
+                <a href="pages/motor.html" class="hero-button">
+                    Explore Our Motorcycles
+                </a>
+            </div>
+        </section>
+
+        <section class="fleet-section" id="fleet">
+            <div class="fleet-container">
+                <div class="fleet-heading">
+                    <div class="fleet-heading-left">
+                        <p class="fleet-eyebrow">FIND YOUR PERFECT RIDE</p>
+                        <h2>Made for the <span>open road.</span></h2>
+                    </div>
+                    <div class="fleet-heading-right">
+                        <p>
+                            From coastal escapes to mountain roads,
+                            find the right vehicle for every Bali adventure.
+                        </p>
+
+                        <a href="pages/motor/motor1.html" class="fleet-view-all">
+                            Explore All Vehicles <span>↗</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="fleet-grid">
+                    <article class="fleet-card">
+                        <a href="pages/detail-motor.html" class="fleet-image-link">
+                            <div class="fleet-image">
+                                <img
+                                    src="images/aerox.png"
+                                    alt="White Porsche sports car on the road"
+                                    loading="lazy"
+                                >
+                                <div class="fleet-badges">
+                                    <span>SPORTS CAR</span>
+                                    <span>2 SEATS</span>
+                                </div>
+                            </div>
+                        </a>
+                        <div class="fleet-card-info">
+                            <div>
+                                <p class="fleet-category">01 / PERFORMANCE</p>
+                                <h3>Porsche 911 GT3 RS</h3>
+                                <p class="fleet-price">
+                                    Starting from <strong>Rp 8.500.000</strong> / day
+                                </p>
+                            </div>
+                            <a href="pages/detail-motor.html" class="fleet-card-link"
+                            aria-label="View Porsche 911 GT3 RS details">
+                                ↗
+                            </a>
+                        </div>
+                    </article>
+                    <article class="fleet-card">
+                        <a href="pages/detail-mobil.html" class="fleet-image-link">
+                            <div class="fleet-image">
+                                <img
+                                    src="images/nmax.png"
+                                    alt="Mercedes AMG luxury sports sedan"
+                                    loading="lazy"
+                                >
+                                <div class="fleet-badges">
+                                    <span>LUXURY</span>
+                                    <span>4 SEATS</span>
+                                </div>
+                            </div>
+                        </a>
+                        <div class="fleet-card-info">
+                            <div>
+                                <p class="fleet-category">02 / LUXURY</p>
+                                <h3>Mercedes-AMG GT</h3>
+                                <p class="fleet-price">
+                                    Starting from <strong>Rp 5.000.000</strong> / day
+                                </p>
+                            </div>
+                            <a href="pages/detail-mobil.html" class="fleet-card-link"
+                            aria-label="View Mercedes AMG GT details">
+                                ↗
+                            </a>
+                        </div>
+                    </article>
+                    <article class="fleet-card">
+                        <a href="pages/detail-motor.html" class="fleet-image-link">
+                            <div class="fleet-image">
+                                <img
+                                    src="images/scoopy.png"
+                                    alt="Black sport motorcycle on a scenic road"
+                                    loading="lazy"
+                                >
+                                <div class="fleet-badges">
+                                    <span>SUPERBIKE</span>
+                                    <span>998 CC</span>
+                                </div>
+                            </div>
+                        </a>
+                        <div class="fleet-card-info">
+                            <div>
+                                <p class="fleet-category">03 / TWO WHEELS</p>
+                                <h3>Yamaha R1</h3>
+                                <p class="fleet-price">
+                                    Starting from <strong>Rp 1.200.000</strong> / day
+                                </p>
+                            </div>
+                            <a href="pages/detail-motor.html" class="fleet-card-link"
+                            aria-label="View Yamaha R1 details">
+                                ↗
+                            </a>
+                        </div>
+                    </article>
+                    <article class="fleet-card">
+                        <a href="pages/detail-mobil.html" class="fleet-image-link">
+                            <div class="fleet-image">
+                                <img
+                                    src="images/vesmet.png"
+                                    alt="Black Toyota Fortuner SUV in the countryside"
+                                    loading="lazy"
+                                >
+                                <div class="fleet-badges">
+                                    <span>FAMILY SUV</span>
+                                    <span>7 SEATS</span>
+                                </div>
+                            </div>
+                        </a>
+                        <div class="fleet-card-info">
+                            <div>
+                                <p class="fleet-category">04 / COMFORT</p>
+                                <h3>Toyota Fortuner</h3>
+                                <p class="fleet-price">
+                                    Starting from <strong>Rp 850.000</strong> / day
+                                </p>
+                            </div>
+                            <a href="pages/detail-mobil.html" class="fleet-card-link"
+                            aria-label="View Toyota Fortuner details">
+                                ↗
+                            </a>
+                        </div>
+                    </article>
+                </div>
+                <div class="fleet-footer">
+                    <p>YOUR JOURNEY STARTS HERE.</p>
+                    <p>Choose your ride. Discover more.</p>
+                </div>
+
+            </div>
+        </section>
+
+        <section class="benefits-section" id="why-us">
+            <div class="benefits-container">
+
+                <div class="benefits-heading">
+                    <p class="benefits-eyebrow">THE JULI EXPERIENCE</p>
+                    <h2>Your Bali ride, <span>made easy.</span></h2>
+                    <p class="benefits-description">
+                        Less planning, more exploring. Everything you need
+                        for a smoother ride around the island.
+                    </p>
+                </div>
+                <div class="benefits-grid">                
+                    <article class="benefit-card">
+                        <img
+                            src="images/aerox.png"
+                            alt="Motorcycle helmet and riding gear ready for a trip"
+                            loading="lazy"
+                        >
+                        <div class="benefit-overlay"></div>
+                        <div class="benefit-content">
+                            <span class="benefit-number">01 / RIDE READY</span>
+                            <h3>Ready for the road.</h3>
+                            <p>
+                                Get a clean, well-maintained motorcycle
+                                so you can focus on discovering Bali.
+                            </p>
+                        </div>
+                    </article>
+                    <article class="benefit-card">
+                        <img
+                            src="images/aerox.png"
+                            alt="Motorcycle being delivered to a customer in Bali"
+                            loading="lazy"
+                        >
+                        <div class="benefit-overlay"></div>
+                        <div class="benefit-content">
+                            <span class="benefit-number">02 / EASY DELIVERY</span>
+                            <h3>Your ride, your location.</h3>
+                            <p>
+                                Arrange delivery to your hotel or another
+                                agreed location for a more convenient start.
+                            </p>
+                        </div>
+                    </article>             
+                    <article class="benefit-card">
+                        <img
+                            src="images/aerox.png"
+                            alt="A scenic road through the green countryside of Bali"
+                            loading="lazy"
+                        >
+                        <div class="benefit-overlay"></div>
+                        <div class="benefit-content">
+                            <span class="benefit-number">03 / CLEAR PRICING</span>
+                            <h3>No guesswork. Just go.</h3>
+                            <p>
+                                Know your rental rate and agreed terms
+                                before your journey begins.
+                            </p>
+                        </div>
+                    </article>                
+                    <article class="benefit-card">
+                        <img
+                            src="images/aerox.png"
+                            alt="Motorcyclist preparing for a journey"
+                            loading="lazy"
+                        >
+                        <div class="benefit-overlay"></div>
+                        <div class="benefit-content">
+                            <span class="benefit-number">04 / TRIP SUPPORT</span>
+                            <h3>We're here along the way.</h3>
+                            <p>
+                                Have a question during your rental?
+                                Reach out to our team for assistance.
+                            </p>
+                        </div>
+                    </article>
+                </div>
+                <div class="benefits-footer">
+                    <span>LESS WORRY. MORE BALI.</span>
+                    <a href="pages/contact.html">
+                        Plan your ride <span>↗</span>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <section class="terms-hero">
+            <div class="terms-breadcrumb">
+                <a href="../../index.html">Home</a>
+                <span>/</span>
+                <span>Rental terms</span>
+            </div>
+
+            <div class="terms-hero-grid">
+                <div class="terms-hero-copy">
+                    <span class="terms-eyebrow">Before you hit the road</span>
+
+                    <h1>
+                        A few things<br>
+                        <span>worth knowing.</span>
+                    </h1>
+
+                    <p>
+                        Everything you need to know before renting with Juli Rentbike.
+                        A little preparation goes a long way toward a better journey
+                        around Bali.
+                    </p>
+
+                    <a href="#terms-content" class="terms-primary-button">
+                        Read the terms <span>↓</span>
+                    </a>
+                </div>
+
+                <div class="terms-hero-aside">
+                    <span class="terms-aside-number">01 — 06</span>
+                    <div class="terms-aside-line"></div>
+                    <p>
+                        Clear information.<br>
+                        Better journeys.
+                    </p>
+                    <span class="terms-aside-caption">JULI RENTBIKE · BALI</span>
+                </div>
+            </div>
+
+            <div class="terms-hero-bottom">
+                <span>Rental information</span>
+                <span>Updated October 2026</span>
+            </div>
+        </section>
+
+        <!-- Intro cards -->
+        <section class="terms-overview">
+            <div class="terms-overview-heading">
+                <span class="terms-eyebrow">A smooth start</span>
+                <h2>Good to know<br>before you go.</h2>
+            </div>
+
+            <div class="terms-overview-cards">
+                <article class="terms-overview-card">
+                    <span class="overview-number">01</span>
+                    <span class="overview-icon">↗</span>
+                    <h3>Bring your documents</h3>
+                    <p>
+                        Prepare the identification and driving documents required
+                        for your vehicle and rental arrangement.
+                    </p>
+                </article>
+
+                <article class="terms-overview-card">
+                    <span class="overview-number">02</span>
+                    <span class="overview-icon">◷</span>
+                    <h3>Know your rental period</h3>
+                    <p>
+                        Confirm the collection time, return deadline, and rental
+                        duration before your journey begins.
+                    </p>
+                </article>
+
+                <article class="terms-overview-card">
+                    <span class="overview-number">03</span>
+                    <span class="overview-icon">＋</span>
+                    <h3>Check before riding</h3>
+                    <p>
+                        Inspect the vehicle with the rental team and report any
+                        existing damage before departure.
+                    </p>
+                </article>
+            </div>
+        </section>
+
+        <section class="terms-section" id="rental-terms">
+            <div class="terms-container">
+
+                <!-- Section Header -->
+                <div class="terms-topline">
+                    <span>JULI RENTBIKE / BALI</span>
+                    <span>YOUR RENTAL GUIDE — 01</span>
+                </div>
+
+                <div class="terms-layout">
+
+                    <!-- LEFT CONTENT -->
+                    <div class="terms-intro">
+                        <span class="terms-eyebrow">
+                            BEFORE YOU RIDE
+                        </span>
+
+                        <h2>
+                            Good rides start
+                            with <span>clear terms.</span>
+                        </h2>
+
+                        <p class="terms-description">
+                            Persiapkan perjalananmu dengan lebih tenang.
+                            Kenali ketentuan penyewaan sebelum mengambil
+                            kunci dan memulai petualanganmu di Bali.
+                        </p>
+
+                        <div class="terms-note">
+                            <div class="terms-note-icon">↗</div>
+
+                            <div>
+                                <h3>Need a little help?</h3>
+                                <p>
+                                    Ada yang ingin kamu pastikan sebelum
+                                    booking? Hubungi tim kami untuk informasi
+                                    lebih lanjut.
+                                </p>
+
+                                <a href="pages/contact.html">
+                                    Contact our team <span>↗</span>
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="terms-footnote">
+                            <span>TRAVEL RESPONSIBLY</span>
+                            <span>ENJOY EVERY MILE.</span>
+                        </div>
+                    </div>
+
+                    <!-- RIGHT ACCORDION -->
+                    <div class="terms-content">
+
+                        <div class="terms-content-heading">
+                            <span>THE ESSENTIALS</span>
+                            <span>05 TOPICS</span>
+                        </div>
+
+                        <!-- ITEM 01 -->
+                        <details class="terms-item" open>
+                            <summary>
+                                <span class="terms-number">01</span>
+                                <span class="terms-title">
+                                    Booking & Payment
+                                </span>
+                                <span class="terms-icon"></span>
+                            </summary>
+
+                            <div class="terms-answer">
+                                <p>
+                                    Pastikan jenis kendaraan, tanggal sewa,
+                                    durasi, dan harga telah dikonfirmasi
+                                    sebelum pembayaran dilakukan.
+                                </p>
+                                <ul>
+                                    <li>Periksa kembali detail pemesanan.</li>
+                                    <li>Konfirmasikan metode pembayaran kepada tim kami.</li>
+                                    <li>Simpan bukti pembayaran dan konfirmasi booking.</li>
+                                </ul>
+                            </div>
+                        </details>
+
+                        <!-- ITEM 02 -->
+                        <details class="terms-item">
+                            <summary>
+                                <span class="terms-number">02</span>
+                                <span class="terms-title">
+                                    Required Documents
+                                </span>
+                                <span class="terms-icon"></span>
+                            </summary>
+
+                            <div class="terms-answer">
+                                <p>
+                                    Siapkan dokumen identitas dan SIM yang
+                                    berlaku serta sesuai dengan jenis kendaraan
+                                    yang akan digunakan.
+                                </p>
+                                <ul>
+                                    <li>Dokumen dapat berbeda sesuai status penyewa.</li>
+                                    <li>Pengendara wajib memiliki izin mengemudi yang sah.</li>
+                                    <li>Tanyakan kepada tim kami jika membutuhkan persyaratan khusus.</li>
+                                </ul>
+                            </div>
+                        </details>
+
+                        <!-- ITEM 03 -->
+                        <details class="terms-item">
+                            <summary>
+                                <span class="terms-number">03</span>
+                                <span class="terms-title">
+                                    Pickup & Return
+                                </span>
+                                <span class="terms-icon"></span>
+                            </summary>
+
+                            <div class="terms-answer">
+                                <p>
+                                    Waktu dan lokasi pengambilan serta
+                                    pengembalian kendaraan mengikuti konfirmasi
+                                    pemesanan.
+                                </p>
+                                <ul>
+                                    <li>Datang sesuai jadwal yang telah disepakati.</li>
+                                    <li>Periksa kondisi kendaraan sebelum berangkat.</li>
+                                    <li>Konfirmasikan biaya jika meminta perpanjangan sewa.</li>
+                                </ul>
+                            </div>
+                        </details>
+
+                        <!-- ITEM 04 -->
+                        <details class="terms-item">
+                            <summary>
+                                <span class="terms-number">04</span>
+                                <span class="terms-title">
+                                    Safety & Responsibilities
+                                </span>
+                                <span class="terms-icon"></span>
+                            </summary>
+
+                            <div class="terms-answer">
+                                <p>
+                                    Keselamatan selalu menjadi prioritas.
+                                    Gunakan kendaraan secara bertanggung jawab
+                                    dan patuhi peraturan lalu lintas setempat.
+                                </p>
+                                <ul>
+                                    <li>Gunakan helm dan perlengkapan keselamatan yang sesuai.</li>
+                                    <li>Jangan berkendara jika tidak memenuhi syarat untuk mengemudi.</li>
+                                    <li>Laporkan kerusakan atau insiden kepada tim kami sesegera mungkin.</li>
+                                </ul>
+                            </div>
+                        </details>
+
+                        <!-- ITEM 05 -->
+                        <details class="terms-item">
+                            <summary>
+                                <span class="terms-number">05</span>
+                                <span class="terms-title">
+                                    Cancellation & Extension
+                                </span>
+                                <span class="terms-icon"></span>
+                            </summary>
+
+                            <div class="terms-answer">
+                                <p>
+                                    Ketentuan pembatalan, perubahan jadwal,
+                                    perpanjangan, dan pengembalian dana mengikuti
+                                    kebijakan yang dikonfirmasi saat pemesanan.
+                                </p>
+                                <ul>
+                                    <li>Informasikan perubahan jadwal sedini mungkin.</li>
+                                    <li>Pastikan ketersediaan kendaraan sebelum memperpanjang sewa.</li>
+                                    <li>Konfirmasikan biaya tambahan dan kebijakan refund kepada tim kami.</li>
+                                </ul>
+                            </div>
+                        </details>
+
+                        <div class="terms-disclaimer">
+                            <span>*</span>
+                            <p>
+                                Ketentuan di atas merupakan panduan umum.
+                                Kebijakan final, biaya, dan persyaratan khusus
+                                wajib dikonfirmasi sebelum transaksi.
+                            </p>
+                        </div>
+
+                    </div>
+                </div>
+
+                <!-- BOTTOM LINE -->
+                <div class="terms-bottom">
+                    <span>MADE FOR YOUR BALI JOURNEY</span>
+                </div>
+
+            </div>
+        </section>
+    
+    </main>
+
+<div id="site-footer-mount"></div>
+<link rel="stylesheet" href="css/footer.css">
+<script src="js/footer.js" defer></script>
+</body>
+</html>

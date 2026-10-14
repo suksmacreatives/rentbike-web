@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Our Motorcycles | Juli Rentbike</title>
+    <meta name="description" content="Explore Bali with Juli Rentbike. Find the right motorcycle for your next island adventure.">
+
+    <!-- Shared styles -->
+    <link rel="stylesheet" href="../../css/style.css">
+    <link rel="stylesheet" href="../../css/navbar.css">
+    <link rel="stylesheet" href="../../css/motor.css">
+    <link rel="stylesheet" href="../../css/footer.css">
+</head>
+<body>
+
+    <!-- Navbar -->
+    <div id="site-navbar"></div>
+
+    <main class="motor-page">
+
+        <section class="motor-hero">
+            <div class="motor-hero-copy">
+                <span class="motor-eyebrow">Find your ride</span>
+
+                <h1>Explore Bali<br>on two wheels.</h1>
+
+                <p>
+                    The right ride makes every journey better.
+                    Find your motorcycle and discover Bali at your own pace.
+                </p>
+            </div>
+
+            <div class="motor-hero-side">
+                <span class="motor-side-number">01 / 06</span>
+                <span class="motor-side-line"></span>
+                <span class="motor-side-caption">Your island adventure starts here</span>
+            </div>
+        </section>
+
+        <section class="motor-catalog">
+
+            <div class="motor-toolbar">
+                <div class="motor-toolbar-heading">
+                    <h2>Our motorcycles</h2>
+                    <span id="motorCount">6 motorcycles</span>
+                </div>
+
+                <div class="motor-filters">
+                    <label class="motor-filter">
+                        <span class="sr-only">Filter by brand</span>
+                        <select id="brandFilter">
+                            <option value="all">All brands</option>
+                            <option value="honda">Honda</option>
+                            <option value="yamaha">Yamaha</option>
+                            <option value="vespa">Vespa</option>
+                            <option value="kawasaki">Kawasaki</option>
+                        </select>
+                    </label>
+
+                    <label class="motor-filter">
+                        <span class="sr-only">Filter by transmission</span>
+                        <select id="transmissionFilter">
+                            <option value="all">All transmissions</option>
+                            <option value="automatic">Automatic</option>
+                            <option value="manual">Manual</option>
+                        </select>
+                    </label>
+                </div>
+            </div>
+
+            <div class="motor-grid" id="motorGrid">
+
+                <!-- Motorcycle 1 -->
+                <article class="motor-card motor-card-featured"
+                    data-brand="honda"
+                    data-transmission="automatic">
+
+                    <a href="../motor/motor1.html" class="motor-image-link"
+                        aria-label="Ask about Honda Scoopy rental">
+                        <div class="motor-image">
+                            <img
+                                src="https://images.unsplash.com/photo-1558981806-ec527fa84c39?auto=format&fit=crop&w=1400&q=85"
+                                alt="Motorcycle ready for a road trip"
+                                loading="lazy">
+
+                            <span class="motor-tag">Popular choice</span>
+                            <span class="motor-image-number">01</span>
+                        </div>
+                    </a>
+
+                    <div class="motor-info">
+                        <div class="motor-details">
+                            <span class="motor-brand">Honda</span>
+                            <h3>Scoopy</h3>
+                            <p>Easy rides around town</p>
+                        </div>
+
+                        <div class="motor-price">
+                            <strong>Rp100.000</strong>
+                            <span>per day</span>
+                        </div>
+                    </div>
+
+                    <div class="motor-card-bottom">
+                        <span class="motor-transmission">Automatic</span>
+                        <a href="../contact.html" class="motor-link">
+                            View details <span>↗</span>
+                        </a>
+                    </div>
+                </article>
+
+                <!-- Motorcycle 2 -->
+                <article class="motor-card"
+                    data-brand="yamaha"
+                    data-transmission="automatic">
+
+                    <a href="../contact.html" class="motor-image-link"
+                        aria-label="Ask about Yamaha NMAX rental">
+                        <div class="motor-image">
+                            <img
+                                src="https://images.unsplash.com/photo-1568772585407-9361f9bf3a87?auto=format&fit=crop&w=1100&q=85"
+                                alt="Modern motorcycle for exploring Bali"
+                                loading="lazy">
+
+                            <span class="motor-image-number">02</span>
+                        </div>
+                    </a>
+
+                    <div class="motor-info">
+                        <div class="motor-details">
+                            <span class="motor-brand">Yamaha</span>
+                            <h3>NMAX</h3>
+                            <p>Comfort for longer journeys</p>
+                        </div>
+
+                        <div class="motor-price">
+                            <strong>Rp150.000</strong>
+                            <span>per day</span>
+                        </div>
+                    </div>
+
+                    <div class="motor-card-bottom">
+                        <span class="motor-transmission">Automatic</span>
+                        <a href="../contact.html" class="motor-link">
+                            View details <span>↗</span>
+                        </a>
+                    </div>
+                </article>
+
+                <!-- Motorcycle 3 -->
+                <article class="motor-card"
+                    data-brand="vespa"
+                    data-transmission="automatic">
+
+                    <a href="../contact.html" class="motor-image-link"
+                        aria-label="Ask about Vespa Primavera rental">
+                        <div class="motor-image">
+                            <img
+                                src="https://images.unsplash.com/photo-1558981403-c5f9899a28bc?auto=format&fit=crop&w=1100&q=85"
+                                alt="Classic motorcycle with timeless styling"
+                                loading="lazy">
+
+                            <span class="motor-image-number">03</span>
+                        </div>
+                    </a>
+
+                    <div class="motor-info">
+                        <div class="motor-details">
+                            <span class="motor-brand">Vespa</span>
+                            <h3>Primavera</h3>
+                            <p>A classic ride with character</p>
+                        </div>
+
+                        <div class="motor-price">
+                            <strong>Rp200.000</strong>
+                            <span>per day</span>
+                        </div>
+                    </div>
+
+                    <div class="motor-card-bottom">
+                        <span class="motor-transmission">Automatic</span>
+                        <a href="../contact.html" class="motor-link">
+                            View details <span>↗</span>
+                        </a>
+                    </div>
+                </article>
+
+                <!-- Motorcycle 4 -->
+                <article class="motor-card motor-card-wide"
+                    data-brand="honda"
+                    data-transmission="manual">
+
+                    <a href="../contact.html" class="motor-image-link"
+                        aria-label="Ask about Honda CRF rental">
+                        <div class="motor-image">
+                            <img
+                                src="https://images.unsplash.com/photo-1558981806-ec527fa84c39?auto=format&fit=crop&w=1400&q=85"
+                                alt="Adventure motorcycle for open roads"
+                                loading="lazy">
+
+                            <span class="motor-tag">For the adventurous</span>
+                            <span class="motor-image-number">04</span>
+                        </div>
+                    </a>
+
+                    <div class="motor-info">
+                        <div class="motor-details">
+                            <span class="motor-brand">Honda</span>
+                            <h3>CRF</h3>
+                            <p>Ready for a different kind of journey</p>
+                        </div>
+
+                        <div class="motor-price">
+                            <strong>Rp250.000</strong>
+                            <span>per day</span>
+                        </div>
+                    </div>
+
+                    <div class="motor-card-bottom">
+                        <span class="motor-transmission">Manual</span>
+                        <a href="../contact.html" class="motor-link">
+                            View details <span>↗</span>
+                        </a>
+                    </div>
+                </article>
+
+                <!-- Motorcycle 5 -->
+                <article class="motor-card"
+                    data-brand="yamaha"
+                    data-transmission="automatic">
+
+                    <a href="../contact.html" class="motor-image-link"
+                        aria-label="Ask about Yamaha Fazzio rental">
+                        <div class="motor-image">
+                            <img
+                                src="https://images.unsplash.com/photo-1591637333184-19aa84b3e01f?auto=format&fit=crop&w=1100&q=85"
+                                alt="Stylish scooter for city travel"
+                                loading="lazy">
+
+                            <span class="motor-image-number">05</span>
+                        </div>
+                    </a>
+
+                    <div class="motor-info">
+                        <div class="motor-details">
+                            <span class="motor-brand">Yamaha</span>
+                            <h3>Fazzio</h3>
+                            <p>A relaxed everyday companion</p>
+                        </div>
+
+                        <div class="motor-price">
+                            <strong>Rp120.000</strong>
+                            <span>per day</span>
+                        </div>
+                    </div>
+
+                    <div class="motor-card-bottom">
+                        <span class="motor-transmission">Automatic</span>
+                        <a href="../contact.html" class="motor-link">
+                            View details <span>↗</span>
+                        </a>
+                    </div>
+                </article>
+
+                <!-- Motorcycle 6 -->
+                <article class="motor-card"
+                    data-brand="kawasaki"
+                    data-transmission="manual">
+
+                    <a href="../contact.html" class="motor-image-link"
+                        aria-label="Ask about Kawasaki KLX rental">
+                        <div class="motor-image">
+                            <img
+                                    src="../../images/aerox.png"
+                                    alt="White Porsche sports car on the road"
+                                    loading="lazy"
+                                >
+                            <span class="motor-image-number">06</span>
+                        </div>
+                    </a>
+
+                    <div class="motor-info">
+                        <div class="motor-details">
+                            <span class="motor-brand">Kawasaki</span>
+                            <h3>KLX</h3>
+                            <p>Explore beyond the usual route</p>
+                        </div>
+
+                        <div class="motor-price">
+                            <strong>Rp250.000</strong>
+                            <span>per day</span>
+                        </div>
+                    </div>
+
+                    <div class="motor-card-bottom">
+                        <span class="motor-transmission">Manual</span>
+                        <a href="../contact.html" class="motor-link">
+                            View details <span>↗</span>
+                        </a>
+                    </div>
+                </article>
+                <article class="motor-card"
+                    data-brand="kawasaki"
+                    data-transmission="manual">
+
+                    <a href="../contact.html" class="motor-image-link"
+                        aria-label="Ask about Kawasaki KLX rental">
+                        <div class="motor-image">
+                            <img
+                                src="../../images/aerox.png"
+                                alt="Motorcycle for outdoor adventures"
+                                loading="lazy">
+
+                            <span class="motor-image-number">06</span>
+                        </div>
+                    </a>
+
+                    <div class="motor-info">
+                        <div class="motor-details">
+                            <span class="motor-brand">Kawasaki</span>
+                            <h3>Aerox</h3>
+                            <p>Explore beyond the usual route</p>
+                        </div>
+
+                        <div class="motor-price">
+                            <strong>Rp250.000</strong>
+                            <span>per day</span>
+                        </div>
+                    </div>
+
+                    <div class="motor-card-bottom">
+                        <span class="motor-transmission">Manual</span>
+                        <a href="../contact.html" class="motor-link">
+                            View details <span>↗</span>
+                        </a>
+                    </div>
+                </article>
+
+            </div>
+
+            <div class="motor-empty" id="motorEmpty" hidden>
+                <h3>No motorcycles found</h3>
+                <p>Try choosing another brand or transmission.</p>
+            </div>
+
+        </section>
+
+        <section class="motor-bottom-cta">
+            <div class="motor-cta-copy">
+                <span class="motor-eyebrow">Your next Bali adventure</span>
+                <h2>Find your ride.<br>Make it memorable.</h2>
+                <p>Get in touch with us and plan your next island adventure.</p>
+            </div>
+
+            <a href="../contact.html" class="motor-cta-button">
+                Contact us <span>↗</span>
+            </a>
+        </section>
+        <section class="benefits-section" id="why-us">
+            <div class="benefits-container">
+
+                <div class="benefits-heading">
+                    <p class="benefits-eyebrow">THE JULI EXPERIENCE</p>
+                    <h2>Your Bali ride, <span>made easy.</span></h2>
+                    <p class="benefits-description">
+                        Less planning, more exploring. Everything you need
+                        for a smoother ride around the island.
+                    </p>
+                </div>
+                <div class="benefits-grid">                
+                    <article class="benefit-card">
+                        <img
+                            src="../../images/aerox.png"
+                            alt="Motorcycle helmet and riding gear ready for a trip"
+                            loading="lazy"
+                        >
+                        <div class="benefit-overlay"></div>
+                        <div class="benefit-content">
+                            <span class="benefit-number">01 / RIDE READY</span>
+                            <h3>Ready for the road.</h3>
+                            <p>
+                                Get a clean, well-maintained motorcycle
+                                so you can focus on discovering Bali.
+                            </p>
+                        </div>
+                    </article>
+                    <article class="benefit-card">
+                        <img
+                            src="../../images/aerox.png"
+                            alt="Motorcycle being delivered to a customer in Bali"
+                            loading="lazy"
+                        >
+                        <div class="benefit-overlay"></div>
+                        <div class="benefit-content">
+                            <span class="benefit-number">02 / EASY DELIVERY</span>
+                            <h3>Your ride, your location.</h3>
+                            <p>
+                                Arrange delivery to your hotel or another
+                                agreed location for a more convenient start.
+                            </p>
+                        </div>
+                    </article>             
+                    <article class="benefit-card">
+                        <img
+                            src="../../images/aerox.png"
+                            alt="A scenic road through the green countryside of Bali"
+                            loading="lazy"
+                        >
+                        <div class="benefit-overlay"></div>
+                        <div class="benefit-content">
+                            <span class="benefit-number">03 / CLEAR PRICING</span>
+                            <h3>No guesswork. Just go.</h3>
+                            <p>
+                                Know your rental rate and agreed terms
+                                before your journey begins.
+                            </p>
+                        </div>
+                    </article>                
+                    <article class="benefit-card">
+                        <img
+                            src="../../images/aerox.png"
+                            alt="Motorcyclist preparing for a journey"
+                            loading="lazy"
+                        >
+                        <div class="benefit-overlay"></div>
+                        <div class="benefit-content">
+                            <span class="benefit-number">04 / TRIP SUPPORT</span>
+                            <h3>We're here along the way.</h3>
+                            <p>
+                                Have a question during your rental?
+                                Reach out to our team for assistance.
+                            </p>
+                        </div>
+                    </article>
+                </div>
+                <div class="benefits-footer">
+                    <span>LESS WORRY. MORE BALI.</span>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <div id="site-footer-mount"></div>
+
+    <script src="../../js/navbar.js" defer></script>
+    <script src="../../js/motor.js" defer></script>
+    <script src="../../js/footer.js" defer></script>
+
+</body>
+</html>

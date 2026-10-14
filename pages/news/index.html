@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Travel Journal | Juli Rentbike</title>
+    <meta name="description" content="Discover Bali travel inspiration, road trip ideas, riding tips, and local guides from Juli Rentbike.">
+
+    <link rel="stylesheet" href="../../css/style.css">
+    <link rel="stylesheet" href="../../css/navbar.css">
+    <link rel="stylesheet" href="../../css/footer.css">
+    <link rel="stylesheet" href="../../css/news.css">
+</head>
+<body>
+
+    <div id="site-navbar"></div>
+
+    <main class="news-page">
+
+        <!-- Hero -->
+        <section class="news-hero">
+            <div class="news-breadcrumb">
+                <a href="../../index.html">Home</a>
+                <span>/</span>
+                <span>Travel journal</span>
+            </div>
+
+            <div class="news-hero-top">
+                <div>
+                    <span class="news-eyebrow">Stories from the island</span>
+                    <h1>
+                        The road is<br>
+                        <span>part of the story.</span>
+                    </h1>
+                </div>
+
+                <p class="news-hero-description">
+                    A collection of places, local discoveries, and little things
+                    that make exploring Bali worth the journey.
+                </p>
+            </div>
+
+            <div class="news-hero-bottom">
+                <span>Travel inspiration · Local guides · Riding tips</span>
+                <a href="#featured-story">Explore the journal <span>↓</span></a>
+            </div>
+        </section>
+
+        <!-- Featured article -->
+        <section class="news-featured" id="featured-story">
+            <a href="#article-ubud" class="news-featured-image">
+                <img
+                    src="../../images/news/ubud-road.jpg"
+                    alt="A tropical road surrounded by greenery in Bali"
+                    loading="eager">
+
+                <span class="news-image-label">Editor's pick</span>
+                <span class="news-image-arrow">↗</span>
+            </a>
+
+            <div class="news-featured-content">
+                <div class="news-article-meta">
+                    <span class="news-category">Destination guide</span>
+                    <span>6 min read</span>
+                </div>
+
+                <h2>
+                    <a href="#article-ubud">
+                        A slower way to discover the hidden corners of Ubud
+                    </a>
+                </h2>
+
+                <p>
+                    Leave the busy streets behind and take the scenic route.
+                    From quiet village roads to lush green landscapes, discover
+                    a different side of Bali at your own pace.
+                </p>
+
+                <div class="news-featured-footer">
+                    <span>Travel journal no. 01</span>
+                    <a href="#article-ubud" aria-label="Read the Ubud travel guide">
+                        Read the story <span>↗</span>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Journal section -->
+        <section class="news-journal" id="journal">
+            <div class="news-section-heading">
+                <div>
+                    <span class="news-eyebrow">From the journal</span>
+                    <h2>A little inspiration<br>for your next ride.</h2>
+                </div>
+
+                <p>
+                    Useful guides and fresh perspectives for a better
+                    experience on the island.
+                </p>
+            </div>
+
+            <!-- Filters -->
+            <div class="news-filters" aria-label="Filter articles">
+                <button
+                    type="button"
+                    class="news-filter is-active"
+                    data-news-filter="all"
+                    aria-pressed="true">
+                    All stories
+                </button>
+
+                <button
+                    type="button"
+                    class="news-filter"
+                    data-news-filter="destination"
+                    aria-pressed="false">
+                    Destinations
+                </button>
+
+                <button
+                    type="button"
+                    class="news-filter"
+                    data-news-filter="riding"
+                    aria-pressed="false">
+                    Riding tips
+                </button>
+
+                <button
+                    type="button"
+                    class="news-filter"
+                    data-news-filter="guide"
+                    aria-pressed="false">
+                    Travel guides
+                </button>
+            </div>
+
+            <!-- Article grid -->
+            <div class="news-grid">
+
+                <article
+                    class="news-card news-card-large"
+                    data-news-category="destination"
+                    id="article-ubud">
+
+                    <a href="#article-ubud" class="news-card-image">
+                        <img
+                            src="../../images/news/ubud-village.jpg"
+                            alt="A quiet village street in Bali"
+                            loading="lazy">
+                        <span class="news-card-number">01</span>
+                    </a>
+
+                    <div class="news-card-body">
+                        <div class="news-article-meta">
+                            <span class="news-category">Destinations</span>
+                            <span>5 min read</span>
+                        </div>
+
+                        <h3>
+                            <a href="#article-ubud">
+                                Beyond the crowds: finding a quieter side of Ubud
+                            </a>
+                        </h3>
+
+                        <p>
+                            Discover village roads, green scenery, and peaceful
+                            corners that invite you to slow down.
+                        </p>
+
+                        <a href="#article-ubud" class="news-read-link">
+                            Explore the guide <span>↗</span>
+                        </a>
+                    </div>
+                </article>
+
+                <article
+                    class="news-card"
+                    data-news-category="riding">
+
+                    <a href="#article-riding" class="news-card-image">
+                        <img
+                            src="../../images/news/scooter-bali.jpg"
+                            alt="A scooter ready for a trip around Bali"
+                            loading="lazy">
+                        <span class="news-card-number">02</span>
+                    </a>
+
+                    <div class="news-card-body">
+                        <div class="news-article-meta">
+                            <span class="news-category">Riding tips</span>
+                            <span>4 min read</span>
+                        </div>
+
+                        <h3>
+                            <a href="#article-riding">
+                                Before you ride: a simple motorcycle checklist
+                            </a>
+                        </h3>
+
+                        <p>
+                            A few checks before departure can help make your
+                            journey more comfortable and prepared.
+                        </p>
+
+                        <a href="#article-riding" class="news-read-link">
+                            Read the tips <span>↗</span>
+                        </a>
+                    </div>
+                </article>
+
+                <article
+                    class="news-card"
+                    data-news-category="guide">
+
+                    <a href="#article-packing" class="news-card-image">
+                        <img
+                            src="../../images/news/travel-essentials.jpg"
+                            alt="Travel essentials prepared for a day trip"
+                            loading="lazy">
+                        <span class="news-card-number">03</span>
+                    </a>
+
+                    <div class="news-card-body">
+                        <div class="news-article-meta">
+                            <span class="news-category">Travel guides</span>
+                            <span>3 min read</span>
+                        </div>
+
+                        <h3>
+                            <a href="#article-packing">
+                                What to bring for a full day exploring Bali
+                            </a>
+                        </h3>
+
+                        <p>
+                            Pack light, stay comfortable, and keep the essentials
+                            close while discovering the island.
+                        </p>
+
+                        <a href="#article-packing" class="news-read-link">
+                            See the checklist <span>↗</span>
+                        </a>
+                    </div>
+                </article>
+
+                <article
+                    class="news-card"
+                    data-news-category="destination">
+
+                    <a href="#article-coast" class="news-card-image">
+                        <img
+                            src="../../images/news/bali-coast.jpg"
+                            alt="A coastal road and tropical scenery in Bali"
+                            loading="lazy">
+                        <span class="news-card-number">04</span>
+                    </a>
+
+                    <div class="news-card-body">
+                        <div class="news-article-meta">
+                            <span class="news-category">Destinations</span>
+                            <span>6 min read</span>
+                        </div>
+
+                        <h3>
+                            <a href="#article-coast">
+                                Chasing the coastline at your own pace
+                            </a>
+                        </h3>
+
+                        <p>
+                            Plan a relaxed coastal escape with scenic stops
+                            along the way.
+                        </p>
+
+                        <a href="#article-coast" class="news-read-link">
+                            Discover the route <span>↗</span>
+                        </a>
+                    </div>
+                </article>
+
+                <article
+                    class="news-card news-card-large"
+                    data-news-category="guide">
+
+                    <a href="#article-rental" class="news-card-image">
+                        <img
+                            src="../../images/news/rental-guide.jpg"
+                            alt="A motorcycle prepared for a rental journey"
+                            loading="lazy">
+                        <span class="news-card-number">05</span>
+                    </a>
+
+                    <div class="news-card-body">
+                        <div class="news-article-meta">
+                            <span class="news-category">Travel guides</span>
+                            <span>4 min read</span>
+                        </div>
+
+                        <h3>
+                            <a href="#article-rental">
+                                Choosing the right rental for your Bali itinerary
+                            </a>
+                        </h3>
+
+                        <p>
+                            Match your vehicle to your travel plans, group size,
+                            luggage, and the places you want to visit.
+                        </p>
+
+                        <a href="#article-rental" class="news-read-link">
+                            Find your ride <span>↗</span>
+                        </a>
+                    </div>
+                </article>
+
+            </div>
+
+            <p class="news-empty-state" hidden>
+                No stories found in this category yet.
+            </p>
+        </section>
+
+        <!-- Travel note -->
+        <section class="news-note">
+            <div class="news-note-top">
+                <span class="news-eyebrow">A note for the road</span>
+                <span class="news-note-mark">✳</span>
+            </div>
+
+            <div class="news-note-content">
+                <h2>
+                    Take the scenic route.<br>
+                    <span>Make room for the unexpected.</span>
+                </h2>
+
+                <p>
+                    Some of the best travel memories begin when you leave
+                    a little space in your itinerary. Ride thoughtfully,
+                    respect local communities, and enjoy the journey.
+                </p>
+
+                <a href="../motor/index.html" class="news-note-button">
+                    Find your motorcycle <span>↗</span>
+                </a>
+            </div>
+
+            <span class="news-note-caption">JULI RENTBIKE · BALI, INDONESIA</span>
+        </section>
+
+    </main>
+
+    <div id="site-footer-mount"></div>
+
+    <script src="../../js/navbar.js" defer></script>
+    <script src="../../js/news.js" defer></script>
+    <script src="../../js/footer.js" defer></script>
+
+</body>
+</html>
