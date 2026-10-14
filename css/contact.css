@@ -3,11 +3,9 @@
     margin: 0 auto;
     color: #e9e9e2;
 }
-
 .contact-page a {
     text-decoration: none;
 }
-
 .contact-breadcrumb {
     display: flex;
     align-items: center;
@@ -16,18 +14,13 @@
     color: #a5a69c;
     font-size: 13px;
 }
-
 .contact-breadcrumb a {
     color: #a5a69c;
     transition: color 0.25s ease;
 }
-
 .contact-breadcrumb a:hover {
     color: #e9e9e2;
 }
-
-/* Hero */
-
 .contact-hero {
     display: grid;
     grid-template-columns: 1fr 0.9fr;
@@ -35,7 +28,6 @@
     gap: 70px;
     padding: 55px 0 105px;
 }
-
 .contact-eyebrow {
     display: inline-block;
     margin-bottom: 22px;
@@ -44,7 +36,6 @@
     letter-spacing: 1.8px;
     text-transform: uppercase;
 }
-
 .contact-hero-content h1 {
     margin: 0;
     font-size: clamp(42px, 5.5vw, 72px);
@@ -52,11 +43,9 @@
     letter-spacing: -2.8px;
     font-weight: 500;
 }
-
 .contact-hero-content h1 span {
     color: #a5a69c;
 }
-
 .contact-hero-content > p {
     max-width: 470px;
     margin: 26px 0 32px;
@@ -64,7 +53,6 @@
     font-size: 15px;
     line-height: 1.9;
 }
-
 .contact-primary-btn {
     display: inline-flex;
     align-items: center;
@@ -75,23 +63,17 @@
     font-size: 13px;
     transition: background 0.25s ease, transform 0.25s ease;
 }
-
 .contact-primary-btn:hover {
     background: #ffffff;
     transform: translateY(-2px);
 }
-
 .contact-primary-btn span {
     font-size: 18px;
 }
-
-/* Hero visual */
-
 .contact-hero-visual {
     position: relative;
     padding-bottom: 35px;
 }
-
 .contact-visual-image {
     min-height: 440px;
     background:
@@ -103,7 +85,6 @@
         url("../images/news/bali-coast.jpg") center / cover no-repeat;
     background-color: #383a34;
 }
-
 .contact-image-caption {
     position: absolute;
     right: 18px;
@@ -115,7 +96,6 @@
     color: #ffffff;
     font-size: 11px;
 }
-
 .contact-floating-note {
     position: absolute;
     right: -20px;
@@ -127,7 +107,6 @@
     background: #292a27;
     border: 1px solid #41423d;
 }
-
 .contact-status-dot {
     width: 9px;
     height: 9px;
@@ -135,25 +114,19 @@
     border-radius: 50%;
     background: #9cbd8b;
 }
-
 .contact-floating-note strong {
     font-size: 12px;
     font-weight: 500;
 }
-
 .contact-floating-note p {
     margin: 6px 0 0;
     color: #a5a69c;
     font-size: 11px;
 }
-
-/* Contact information */
-
 .contact-information {
     padding: 75px 0 100px;
     border-top: 1px solid #41423d;
 }
-
 .contact-section-heading {
     display: flex;
     align-items: flex-end;
@@ -161,11 +134,9 @@
     gap: 35px;
     margin-bottom: 42px;
 }
-
 .contact-section-heading .contact-eyebrow {
     margin-bottom: 15px;
 }
-
 .contact-section-heading h2,
 .contact-form-intro h2,
 .contact-cta h2 {
@@ -175,7 +146,6 @@
     font-weight: 500;
     letter-spacing: -1.3px;
 }
-
 .contact-section-heading > p {
     max-width: 380px;
     margin: 0;
@@ -183,28 +153,23 @@
     font-size: 13px;
     line-height: 1.8;
 }
-
 .contact-information-grid {
     display: grid;
     grid-template-columns: repeat(3, minmax(0, 1fr));
     border-top: 1px solid #41423d;
     border-bottom: 1px solid #41423d;
 }
-
 .contact-info-card {
     padding: 30px 26px 32px;
     border-right: 1px solid #41423d;
 }
-
 .contact-info-card:first-child {
     padding-left: 0;
 }
-
 .contact-info-card:last-child {
     padding-right: 0;
     border-right: none;
 }
-
 .contact-info-icon {
     display: flex;
     align-items: center;
@@ -216,20 +181,17 @@
     color: #e9e9e2;
     font-size: 20px;
 }
-
 .contact-info-label {
     color: #a5a69c;
     font-size: 11px;
     letter-spacing: 1.4px;
     text-transform: uppercase;
 }
-
 .contact-info-card h3 {
     margin: 12px 0;
     font-size: 21px;
     font-weight: 500;
 }
-
 .contact-info-card p {
     min-height: 70px;
     margin: 0 0 22px;
@@ -237,7 +199,6 @@
     font-size: 13px;
     line-height: 1.8;
 }
-
 .contact-info-card > a {
     display: inline-flex;
     align-items: center;
@@ -245,17 +206,12 @@
     color: #e9e9e2;
     font-size: 12px;
 }
-
 .contact-info-card > a span {
     transition: transform 0.25s ease;
 }
-
 .contact-info-card > a:hover span {
     transform: translate(3px, -3px);
 }
-
-/* Contact form */
-
 .contact-form-section {
     display: grid;
     grid-template-columns: 0.8fr 1.2fr;
@@ -263,7 +219,6 @@
     padding: 95px 0;
     border-top: 1px solid #41423d;
 }
-
 .contact-form-intro > p {
     max-width: 400px;
     margin: 22px 0 0;
@@ -271,7 +226,6 @@
     font-size: 14px;
     line-height: 1.9;
 }
-
 .contact-form-note {
     display: flex;
     align-items: flex-start;
@@ -281,25 +235,21 @@
     padding-top: 22px;
     border-top: 1px solid #41423d;
 }
-
 .contact-form-note > span {
     color: #a5a69c;
     font-size: 20px;
 }
-
 .contact-form-note p {
     margin: 0;
     color: #a5a69c;
     font-size: 12px;
     line-height: 1.8;
 }
-
 .contact-form {
     display: flex;
     flex-direction: column;
     gap: 25px;
 }
-
 .contact-form-row {
     display: grid;
     grid-template-columns: repeat(2, minmax(0, 1fr));
